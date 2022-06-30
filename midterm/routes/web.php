@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// crud new
+Route::get('/test',[NewController::class,'getIndex']);
+
+Route::get('/admin-new',[NewController::class,'getAdminAdd']);
+Route::post('/admin-new',[NewController::class,'postAdminAdd'])->name('admin-add-form');
+
+Route::get('/showad',[NewController::class,'getIndexAdmin']);
+
+Route::get('/admin-edit-form/{id}',[NewController::class,'getAdminEdit']);
+Route::post('/admin-edit',[NewController::class,'postAdminEdit']);
+Route::post('/admin-delete/{id}',[NewController::class,'postAdminDelete']);
