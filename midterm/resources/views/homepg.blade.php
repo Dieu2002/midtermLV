@@ -171,8 +171,19 @@
     <link rel="alternate" type="text/xml+oembed"
         href="https://at10.mediawz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fat10.mediawz.com%2F&#038;format=xml" />
     <link rel="pingback" href="https://at10.mediawz.com/xmlrpc.php">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
-   
+        /* .tabcontent{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-gap: 50px;
+            
+           
+        } */
+       
+      
+      
+
     </style>
     <noscript>
         <style>
@@ -673,21 +684,19 @@
                                                         class="tablinks ">Thực phẩm
                                                         khô</button><button class="tablinks "
                                                       >Rau hữu cơ</button></div>
-                                                <div id="tab_20" class="tabcontent" style="display: block;">
+                                                      
+                                                <div id="tab_20" class="tabcontent row">
                                                 @foreach($new_food as $new)
-                                                    <div class="woocommerce columns-4 ">
-                                                        <div class="grid-uniform md-mg-left-10 products columns-4">
-                                                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+                                                    <div class="woocommerce ">
+                                                        <div class="">
+                                                            <div class="">
                                                                 <div class="product-item">
-                                                                    <div class="product-img">
-                                                                        <a
-                                                                            href="{{$new->image}}">
+                                                                    <div class="product-img"> 
                                                                             <img width="260" height="260"
-                                                                                src=""
+                                                                                src="{{$new->image}}"
                                                                                 class="attachment-thumb_260x260 size-thumb_260x260 wp-post-image"
                                                                                 alt=""
-        
-                                                                                sizes="100vw" /> </a>
+                                                                                sizes="50vw" />
                                                                     </div>
                                                                     <div class="product-info">
                                                                         <div class="product-title">
@@ -715,47 +724,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                          
-                                                            <!-- <div
-                                                                class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-                                                                <div class="product-item">
-                                                                    <div class="product-img">
-                                                                        <a
-                                                                            href="https://at10.mediawz.com/san-pham/cu-den/">
-                                                                            <img width="260" height="260"
-                                                                                src="https://at10.mediawz.com/wp-content/uploads/2019/06/hat_giong_cu_den_large-260x260.jpg"
-                                                                                class="attachment-thumb_260x260 size-thumb_260x260 wp-post-image"
-                                                                                alt="CỦ DỀN"
-                                                                                srcset="https://at10.mediawz.com/wp-content/uploads/2019/06/hat_giong_cu_den_large-260x260.jpg 260w, https://at10.mediawz.com/wp-content/uploads/2019/06/hat_giong_cu_den_large-300x300.jpg 300w, https://at10.mediawz.com/wp-content/uploads/2019/06/hat_giong_cu_den_large-100x100.jpg 100w, https://at10.mediawz.com/wp-content/uploads/2019/06/hat_giong_cu_den_large-150x150.jpg 150w, https://at10.mediawz.com/wp-content/uploads/2019/06/hat_giong_cu_den_large.jpg 480w"
-                                                                                sizes="100vw" /> </a>
-                                                                    </div>
-                                                                    <div class="product-info">
-                                                                        <div class="product-title">
-                                                                            <a
-                                                                                href="https://at10.mediawz.com/san-pham/cu-den/">CỦ
-                                                                                DỀN</a>
-                                                                        </div>
-                                                                        <div class="product-price clearfix">
-                                                                            <span class="current-price"><span
-                                                                                    class="woocommerce-Price-amount amount">12,000<span
-                                                                                        class="woocommerce-Price-currencySymbol">&#8363;</span></span></span>
-                                                                            <span class="original-price"><s><span
-                                                                                        class="woocommerce-Price-amount amount">15,000<span
-                                                                                            class="woocommerce-Price-currencySymbol">&#8363;</span></span></s></span>
-                                                                        </div>
-                                                                        <div
-                                                                            class="product-actions text-center clearfix">
-                                                                            <a
-                                                                                href="https://at10.mediawz.com/san-pham/cu-den/">
-                                                                                <button type="button"
-                                                                                    class="btn-buyNow buy-now medium--hide small--hide"
-                                                                                    data-id="1026777806">Chi
-                                                                                    tiết</button>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div> --> 
                                                         </div>
                                                     </div>
                                                   @endforeach  
