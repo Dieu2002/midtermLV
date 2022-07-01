@@ -714,7 +714,7 @@
                                                                         <div
                                                                             class="product-actions text-center clearfix">
                                                                             <a
-                                                                                href="{{$new->description}}">
+                                                                                href="detail/{{$new->id}}">
                                                                                 <button type="button"
                                                                                     class="btn-buyNow buy-now medium--hide small--hide"
                                                                                     data-id="1026777806">Chi

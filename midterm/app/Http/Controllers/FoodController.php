@@ -42,6 +42,10 @@ class FoodController extends Controller
             return redirect('/showadmin')->with('success', 'Đã thêm thành công');
     
         }
+        public function Detail(Request $request){
+            $food = food::where ('id',$request->id)->first();
+            return view ('detail',compact('food'));
+        }
     }
 
 
