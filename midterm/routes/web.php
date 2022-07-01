@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewController;
+use App\Http\Controllers\FoodController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +19,20 @@ use App\Http\Controllers\NewController;
 Route::get('/', function () {
     return view('welcome');
 });
-// crud new
-Route::get('/test',[NewController::class,'getIndex']);
 
-Route::get('/admin-new',[NewController::class,'getAdminAdd']);
-Route::post('/admin-new',[NewController::class,'postAdminAdd'])->name('admin-add-form');
 
-Route::get('/showad',[NewController::class,'getIndexAdmin']);
+// midterm 
+// Route::get('/form',[FoodController::class,'getIndex']);
+// Route::post('/form',[FoodController::class,'getIndex']);
+Route::get('/home',[FoodController::class,'getIndexHome']);
 
-Route::get('/admin-edit-form/{id}',[NewController::class,'getAdminEdit']);
-Route::post('/admin-edit',[NewController::class,'postAdminEdit']);
-Route::post('/admin-delete/{id}',[NewController::class,'postAdminDelete']);
+Route::get('/admin',[FoodController::class,'getAdminAdd']);
+Route::post('/admin',[FoodController::class,'postAdminAdd'])->name('admin-add-form');
+
+Route::get('/showadmin',[FoodController::class,'getIndexAdmin']);
+
+
+
+// Route::get('/admin-edit-form/{id}',[PageOneController::class,'getAdminEdit']);
+// Route::post('/admin-edit',[PageOneController::class,'postAdminEdit']);
+// Route::post('/admin-delete/{id}',[PageOneController::class,'postAdminDelete']);
