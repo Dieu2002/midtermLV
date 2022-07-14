@@ -23,5 +23,3 @@ Route::get('/get-food',[APIController::class,'getFoods']);
 Route::get('/get-food-by-keyword',[APIController::class,'searchfoods']);
 
 
-
-Route::post('/upload-image',[APIController::class,'uploadImage']);

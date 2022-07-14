@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import ShowFood from './Component/ShowFood';
-import Map1 from './Component/ShowFood';
+
+import ShowFood from './Component/ShowFood';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Map1/>
+    <ShowFood />
   </React.StrictMode>
 );
 
