@@ -342,7 +342,7 @@
                                         <ul id="menu-menu-chinh-1" class="no-bullets">
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-19 current-menu-ancestor">
-                                                <a href="https://at10.mediawz.com/">Trang chủ</a></li>
+                                                <a href="">Trang chủ</a></li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130">
                                                 <a href="https://at10.mediawz.com/gioi-thieu/">Giới thiệu</a></li>
@@ -363,7 +363,7 @@
                                     <div id="hc-search-wrapper" class="hc-search-wrapper">
                                         <a href="javascript:void(0)"><svg class="svg-inline--fa fa-search fa-w-16"
                                                 aria-hidden="true" data-prefix="fa" data-icon="search" role="img"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                xmlns="" viewBox="0 0 512 512"
                                                 data-fa-i2svg="">
                                                 <path fill="currentColor"
                                                     d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
@@ -373,7 +373,7 @@
                                             <div class="search-form-wrapper">
                                                 <form id="searchauto" method="get"
                                                     class="searchform-categoris ultimate-search"
-                                                    action="https://at10.mediawz.com/">
+                                                    action="">
                                                     <div class="wpo-search">
                                                         <div class="wpo-search-inner">
                                                             <div class="input-group">

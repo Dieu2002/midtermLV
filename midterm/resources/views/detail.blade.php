@@ -12,22 +12,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Detail</h2>
- 
-        
-    <!-- <div class="card" style="width: 18rem;">
-    
-        <img src="{{$food->image}}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{$food->name}}</h5>
-            <p class="card-text">{{$food->price}}</p>
-            <p>{{$food->description}}</p>
-            <a href="#" class="btn btn-primary">Buy</a>
-        </div>
-     </div> -->
+  
      <div class="container">                                                         
-                                                                  
-                                                                                   
+     <span>Detail</span>                                                             
                 <div class="row">                                                           
                   <div class="col-sm-4">                                                            
                     <img src="{{$food->image}}" width="300" height="300" alt="">                                                           
@@ -39,10 +26,10 @@
                       </p>                                                          
                       <p class="single-item-price" style="text-align:left;font-size: 15px;">                                                            
                         <span> @if($food->oldprice==0)                                                            
-                          <span class="flash-sale">{{number_format($food->price)}} Đồng</span>                                                          
+                          <span class="flash-sale">Giá mới: {{number_format($food->price)}} Đồng</span>                                                          
                           @else                                                         
-                          <span class="flash-del">{{number_format($food->price)}} Đồng </span>                                                          
-                          <span class="flash-sale">{{number_format($food->oldprice)}} Đồng</span>                                                         
+                          <span class="flash-del">Giá mới: {{number_format($food->price)}} Đồng </span>                                                          
+                          <span class="flash-sale"> Giá cũ: {{number_format($food->oldprice)}} Đồng</span>                                                         
                           @endif</span>                                                         
                       </p>                                                          
                     </div>                                                          
@@ -67,7 +54,10 @@
                         <option value="5">5</option>                                                            
                       </select>                                                         
                       <a class="add-to-cart" href="shopping_cart.html"><i                                                           
-                          class="fa fa-shopping-cart"></i></a>                                                          
+                          class="fa fa-shopping-cart"></i></a> 
+                          <button type="button"
+                                     class="btn btn-primary">Buy</button>
+                                                                                                                                             
                       <div class="clearfix"></div>                                                          
                     </div>                                                          
                   </div>                                                            
